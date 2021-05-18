@@ -72,8 +72,8 @@ WORKDIR /app
 COPY script.sh .
 RUN chmod a+x script.sh
 RUN chown -R 777 /app
-RUN a2enmod ssl 
-EXPOSE 8081
+#RUN a2enmod ssl 
+#EXPOSE 8081
 #CMD ["apachectl", "-D", "FOREGROUND"]
 #CMD ["/bin/bash", "/app/script.sh"]
 
